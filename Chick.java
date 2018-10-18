@@ -1,7 +1,13 @@
 class Chick extends Cow {         
-     public Chick(String type, String sound)     {         
-         myType = type;         
-         mySound = sound;     
+    private int thee; 
+    public Chick(String type, String sound)     {         
+      thee = (int)(Math.random()*2);   
+      if(thee == 0){
+         mySound = sound;
+       }else{ 
+         mySound = "cheep";
+       }
+       myType = type;     
      }     
      public Chick()     {         
          myType = "unknown";         
